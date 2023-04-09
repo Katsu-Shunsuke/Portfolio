@@ -8,6 +8,9 @@ def frontpage(request):
     posts = Post.objects.all()
     return render(request, "blog/frontpage.html", {"posts": posts})
 
+def shoot(request):
+    return render(request, "blog/shoot.html")
+
 def post_detail(request, slug):
     post = Post.objects.get(slug=slug)
 

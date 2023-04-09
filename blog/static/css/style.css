@@ -2,7 +2,7 @@
 
 html {
     font-size: 100%;
-    scroll-padding-top: 130px; /* 固定ヘッダの高さ分 */
+    scroll-padding-top: 80px; /* 固定ヘッダの高さ分 */
 }
 body {
     color: #24292e;
@@ -23,11 +23,15 @@ li {
 }
 
 .wrapper {
-    max-width: 960px;
-    margin: 0 auto 0 auto;
+    /*max-width: 960px;
+    margin: 0 auto 0 auto;*/
     text-align: center;
     font-size: 0.9rem;
     padding: 0 4%;
+}
+.subwrapper{
+    max-width: 960px;
+    margin: 0 auto 0 auto;
 }
 .site-title {
     line-height: 1px;
@@ -78,7 +82,7 @@ li {
     margin-left: 30px;
 }
 #header li a {
-    color: #24292e;
+    color: white;
 }
 #header li a:hover {
     opacity: 0.7;
@@ -104,8 +108,8 @@ Mainvisual
 About
 -------------------------------------------*/
 #about{
-    padding-top: 80px; /* ヘッダーの高さ分だけ余白を開ける */
-    
+    padding-top: 50px; /* ヘッダーの高さ分だけ余白を開ける */
+    margin-bottom: 50px;
 }
 
 #about .sec-title{
@@ -126,38 +130,77 @@ About
 #about .profile-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
-
-#about .profile-text{
+#about .profile-left{
     flex: 1;
+}
+#about .profile-right{
+    flex: 1;
+    width: 100%;
+}
+#about .profile-lb{
+    align-items: flex-end;
+    display: flex;
+}
+#about .profile-lb .git-icon{
+    width: 70px;
+    padding:0 0 25px 0;
+}
+#about .profile-text{
     text-align: left;
 }
 
 #about .profile-image {
-    flex: 1;
+    padding: 5% 5%;
+    width:60%
+}
+#about .profile-skills-title{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+#about .profile-skills{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#about .profile-skills img{
+    margin:10px;
+    height: 80px;
+    width: auto;
+}
+#about .profile-skills .ros{
+    height: 40px;
+    width: auto;
 }
 
-.profile-image img {
-    max-width: 100%;
-    height: auto;
-}
+
 
 /*-------------------------------------------
 Works
 -------------------------------------------*/
 #works{
     padding-top: 80px;
+    background-color: #e6f0f0;
+}
+
+#works .sec-title{
+    margin-bottom: 100px;
 }
 
 #works .work-wrapper{
     display: flex;
-    height: 300px;
+    align-items: center;
+    height: 500px;
     padding: 30px 30px;
 }
 
 #works .work-text{
     flex: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 #works .work-title{
@@ -169,6 +212,19 @@ Works
 }
 #works .work-image{
     flex: 1;
+}
+.button {
+    margin: 50px auto 0 auto;
+    text-align: center;
+    width: 200px;
+    background-color: #24292e;
+    color: #fff;
+    padding: 15px 0;
+    border: solid 1px #24292e;
+}
+.button :hover {
+    background: #fff;
+    color: #24292e;
 }
 
 /*-------------------------------------------
