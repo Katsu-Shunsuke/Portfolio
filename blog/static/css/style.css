@@ -2,13 +2,13 @@
 
 html {
     font-size: 100%;
-    scroll-padding-top: 80px; /* 固定ヘッダの高さ分 */
+    /*scroll-padding-top: 80px; 固定ヘッダの高さ分 */
 }
 body {
     color: #24292e;
 }
 main{
-    padding-top:130px;
+    
 }
 a {
     text-decoration: none;
@@ -69,47 +69,70 @@ li {
     font-size: 25px;
     color:white;
 }
+#header .site-list{
+    height: 80px;
+    align-items: center;
+    display: flex;
+}
 #header a:visited{
     color:white;
 }
 #header ul {
     display: flex;
-    padding: 10px 0;
+    height: 80px;
+    align-items: center;
 }
 #header li {
     color:white;
     font-size: 0.9rem;
-    margin-left: 30px;
+    width:75px;
+    height:80px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
 }
 #header li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+    width: 75px;
+    height: 80px;
 }
-#header li a:hover {
+#header li:hover a{
+    color: black;
+}
+#header li:hover {
     opacity: 0.7;
+    background-color: white;
 }
 #header li img.icon {
     width: 20px;
 }
 
 /*-------------------------------------------
-Mainvisual
+Main-visual
 -------------------------------------------*/
-#mainvisual {
-    margin-bottom: 80px;
+#main-visual {
+    background-color: #97cdf3;
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#mainvisual img {
-    width: 100%;
-    max-width: 1920px;
-    height: 420px;
-    object-fit: cover;
+#main-visual img {
+    width: 300px;
+    height: auto;
 }
 
 /*-------------------------------------------
 About
 -------------------------------------------*/
 #about{
-    padding-top: 50px; /* ヘッダーの高さ分だけ余白を開ける */
+    padding-top: 150px; /* ヘッダーの高さ分だけ余白を開ける */
     margin-bottom: 50px;
+    height: 100vh;
 }
 
 #about .sec-title{
@@ -182,8 +205,8 @@ About
 Works
 -------------------------------------------*/
 #works{
-    padding-top: 80px;
-    background-color: #e6f0f0;
+    padding-top: 150px;
+    background-color: #f1f6f6;
 }
 
 #works .sec-title{
@@ -194,7 +217,7 @@ Works
     display: flex;
     align-items: center;
     height: 500px;
-    padding: 30px 30px;
+    padding: 100px 100px;
 }
 
 #works .work-text{
@@ -213,7 +236,7 @@ Works
 #works .work-image{
     flex: 1;
 }
-.button {
+#works .work-wrapper .work-text .button {
     margin: 50px auto 0 auto;
     text-align: center;
     width: 200px;
@@ -222,7 +245,7 @@ Works
     padding: 15px 0;
     border: solid 1px #24292e;
 }
-.button :hover {
+#works .work-wrapper .work-text .button:hover {
     background: #fff;
     color: #24292e;
 }
@@ -251,7 +274,7 @@ News
 Contact
 -------------------------------------------*/
 #contact{
-    padding-top: 80px;
+    padding-top: 150px;
     margin-bottom: 130px;
 }
 #contact dl {

@@ -11,6 +11,12 @@ def frontpage(request):
 def shoot(request):
     return render(request, "blog/shoot.html")
 
+def paper(request):
+    return render(request, "blog/paper.html")
+
+def feel(request):
+    return render(request, "blog/feel.html")
+
 def post_detail(request, slug):
     post = Post.objects.get(slug=slug)
 
