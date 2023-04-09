@@ -1,0 +1,103 @@
+{% extends "blog/base.html" %}{% block content %}
+<!--
+{% for post in posts %}
+<div class="post block">
+    <h2 class="subtitle">{{post.title}}</h2>
+    <small>Posted at {{post.posted_date}}</small>
+    <p>{{post.intro}}</p>
+    <a href="{% url 'post_detail' post.slug %}">もっと読む</a>
+    <hr />
+</div>
+{% endfor %}
+-->
+{% load static %}
+<main>
+    <!--
+    <div id="mainvisual">
+        <picture>
+            <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg">
+            <img src="img/mainvisual-pc.jpg" alt="テキストテキストテキスト">
+        </picture>
+    </div>
+-->
+
+    <section id="about" class="wrapper">
+        <h2 class="sec-title">Profile</h2>
+        <div class="profile-wrapper">
+            <div class="profile-text">
+                <ul>
+                    <li>勝 駿介 Age:22</li> 
+                    <li></li>
+                    <li>東京大学工学部機械情報工学科卒業(2023)</li>
+                    <li>東京大学大学院情報理工学系研究科</li>
+                    <li>知能機械情報学専攻1年</li>
+                    <li>深尾山本研究室</li>
+                    <li>Email: skatsu9081@gmail.com</li>
+                </ul>
+            </div>
+            <div class="profile-image">
+                <img src="{% static 'images/myimage.png' %}" alt="自分の写真">
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="works" class="wrapper">
+        <h2 class="sec-title">Works</h2>
+        <div class="work-wrapper">
+            <div class="work-text">
+                <div class="work-title">
+                    Shoot!
+                </div>
+                <div class="work-explain">
+                    Unityで作成した3Dシューティングゲーム
+                </div>
+            </div>
+            <div class="work-image"><img src="img/works1.jpg" alt="UnityGame「shoot」"></div>
+        </div>
+        <div class="work-wrapper">
+            <div class="work-image"><img src="img/works1.jpg" alt="UnityGame「shoot」"></div>
+            <div class="work-text">
+                <div class="work-title">
+                    卒業研究
+                </div>
+                <div class="work-explain">
+                    Pythonを使用したトマトの自動収穫
+                </div>
+            </div>
+        </div>
+        <div class="work-wrapper">
+            <div class="work-text">
+                <div class="work-title">
+                    Feel!!
+                </div>
+                <div class="work-explain">
+                    Rubyを使用したユーザがデザインするサイト
+                </div>
+            </div>
+            <div class="work-image"><img src="img/works1.jpg" alt="UnityGame「shoot」"></div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="wrapper">
+        <h2 class="sec-title">Contact&Comment</h2>
+        <form action="#" method="post">
+        <dl>
+            <dt><label for="name">NAME</label></dt>
+            <dd><input type="text" id="name" name="your-name"></dd>
+            <dt><label for="email">E-mail</label></dt>
+            <dd><input type="email" id="email" name="your-email"></dd>
+            <dt><label for="message">MESSAGE</label></dt>
+            <dd><textarea id="message" name="your-message"></textarea></dd>
+        </dl>
+        <div class="button"><input type="submit" value="送信"></div>
+        </form>
+    </section>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2023 My Work</p>
+    </footer>
+
+{% endblock %}
