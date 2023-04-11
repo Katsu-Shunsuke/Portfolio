@@ -124,6 +124,87 @@ Main-visual
     height: auto;
 }
 
+.logo-container {
+    align-items: center;
+    justify-content: center;
+    height: 200px; /* ロゴの高さに合わせて変更してください */
+    position: relative;
+    padding: 0 40% 0 40%;
+}
+
+#bar{
+    width: 0%;
+    height: 10px;
+    background-color: red;
+    position: relative;
+    top: 150px;
+    left: calc(width/2);
+    transition: width 1s ease;
+}
+
+.logo-text{
+    display: flex;
+    position: relative;
+}
+
+.logo-about {
+    flex: 1;
+    font-size: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 100px;
+    animation: about-anim 5s ease-out forwards;
+}
+
+.logo-winner {
+    flex: 1;
+    font-size: 100px;
+    transform: translateY(50%);
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    animation: winner-anim 5s ease-out forwards;
+}
+/*
+@keyframes about-anim {
+    from {
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+*/
+
+@keyframes winner-anim {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/*
+.logo-container.loaded .logo-text {
+    animation: text-anim 0.5s ease-out forwards;
+}
+
+@keyframes text-anim {
+    from {
+        transform: translateY(-50%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+*/
+
+
 /*-------------------------------------------
 About
 -------------------------------------------*/
