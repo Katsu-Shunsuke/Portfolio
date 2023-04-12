@@ -1,3 +1,4 @@
+/* スクロールアニメーション */
 $(document).ready(function() {
     $('a[href^="#"]').click(function() {
         var target = $($(this).attr('href'));
@@ -10,6 +11,7 @@ $(document).ready(function() {
     });
 });
 
+/* aboutのアニメーション */
 function typeWriter(text, i, fnCallback) {
     if (i < (text.length)) {
         document.getElementById("typing-text").innerHTML = text.substring(0, i+1) + '<span aria-hidden="true"></span>';
@@ -20,36 +22,28 @@ function typeWriter(text, i, fnCallback) {
         setTimeout(fnCallback, 700);
     }
 }
+/*
 document.addEventListener('DOMContentLoaded', function(){
     typeWriter("about", 0, function(){
         console.log("タイピングが完了しました。");
     });
 });
+*/
 
 window.onload = function() {
     var bar = document.getElementById("bar");
     console.log(bar);
-
     function animate(){
         if(width >= 100){
+            setTimeout(typeWriter("about", 0, function(){
+                console.log("タイピングが完了しました。");
+                }), 5000);
             return;
         }
         width++;
         bar.style.width = width + "%";
-        setTimeout(animate, 10);
+        setTimeout(animate, 5);
     };
-
     var width = 0;
-    setTimeout(animate, 3000);
+    setTimeout(animate, 1000);
 };
-
-/*
-window.onload = function() {
-    var changeColor = function() {
-        var e = document.getElementById('test');
-        e.style.color = 'red';
-        console.log("書き換えテス")
-    }
-    setTimeout(changeColor, 5000);
-}
-*/
