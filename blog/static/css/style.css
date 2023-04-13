@@ -119,53 +119,57 @@ Main-visual
     align-items: center;
     justify-content: center;
 }
-#main-visual img {
-    width: 300px;
-    height: auto;
-}
 
-.logo-container {
+#main-visual .logo-container {
     align-items: center;
     justify-content: center;
-    height: 100vh; /* ロゴの高さに合わせて変更してください */
+    display: flex;
+    height: 40%;
+    width: 40%;
     position: relative;
-    padding: 0 35% 0 35%;
+    margin: 25% 30% 35% 30%;
 }
 
-#bar{
+#main-visual #bar{
     width: 0%;
     height: 2px;
-    background-color: black;
-    position: relative;
-    top: 200px;
-    left: calc(width/2);
+    background-color: white;
+    position: absolute;
+    bottom: 0%;
+    left: 0px; /* 100pxは#barの幅を指定するための値です */
+    flex-grow: 1;
 }
 
-.logo-text{
+#main-visual #typing-text {
+    margin-right: 10px;
+}
+
+#main-visual .logo-text{
     display: flex;
+    justify-content: center; /* ロゴのテキストを中央に配置 */
+    top: 0px;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    color: white;
 }
 
-.logo-about {
+#main-visual .logo-about {
     flex: 1;
-    font-size: 30px;
+    font-size: 2rem;
     opacity: 1;
     position: absolute;
-    top: 150px;
+    bottom: 5%;
     left: 25px;
 }
 
-.logo-winner {
+#main-visual .logo-winner {
     flex: 1;
-    font-size: 125px;
+    font-size: 10rem;
     transform: translateY(50%);
     opacity: 1;
     position: absolute;
-    top: 30px;
-    left: 170px;
-    animation: winner-anim 5s ease-out forwards;
+    top: 0%;
+    right: 5%;
+    animation: winner-anim 2s ease-out forwards;
 }
 
 @keyframes winner-anim {
@@ -178,7 +182,6 @@ Main-visual
         opacity: 1;
     }
 }
-
 
 /*-------------------------------------------
 About
