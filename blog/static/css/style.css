@@ -2,6 +2,7 @@
 
 html {
     font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
     /*scroll-padding-top: 80px; 固定ヘッダの高さ分 */
 }
 body {
@@ -125,9 +126,9 @@ Main-visual
     justify-content: center;
     display: flex;
     height: 40%;
-    width: 40%;
+    width: 350px;
     position: relative;
-    margin: 25% 30% 35% 30%;
+    margin: 25% auto 35% auto;
 }
 
 #main-visual #bar{
@@ -135,7 +136,7 @@ Main-visual
     height: 2px;
     background-color: white;
     position: absolute;
-    bottom: 0%;
+    bottom: 20px;
     left: 0px; /* 100pxは#barの幅を指定するための値です */
     flex-grow: 1;
 }
@@ -157,18 +158,20 @@ Main-visual
     font-size: 2rem;
     opacity: 1;
     position: absolute;
-    bottom: 5%;
+    bottom: 35px;
     left: 25px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #main-visual .logo-winner {
     flex: 1;
     font-size: 10rem;
+    font-family: 'Noto Serif JP', serif;
     transform: translateY(50%);
     opacity: 1;
     position: absolute;
-    top: 0%;
-    right: 5%;
+    bottom: 0;
+    right: 20px;
     animation: winner-anim 2s ease-out forwards;
 }
 
@@ -273,8 +276,11 @@ Works
 #works .work-wrapper{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 500px;
-    padding: 100px 100px;
+    width: 800px;
+    padding: 100px auto;
+    margin: 100px auto;
 }
 
 #works .work-text{
