@@ -172,16 +172,20 @@ Main-visual
     position: absolute;
     bottom: 0;
     right: 10px;
-    animation: winner-anim 2s ease-out forwards;
+    animation: winner-anim 2.5s ease-out forwards;
 }
 
 @keyframes winner-anim {
-    from {
-        transform: translateY(30%);
+    0% {
+        transform: translate(-50%, 30%);
         opacity: 0;
     }
-    to {
-        transform: translateY(0);
+    80%{
+        transform: translate(-50%, 0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0%, 0%);
         opacity: 1;
     }
 }
