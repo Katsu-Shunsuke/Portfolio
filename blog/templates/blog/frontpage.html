@@ -11,6 +11,7 @@
 {% endfor %}
 -->
 {% load static %}
+{% load widget_tweaks %}
 <main>
     <!--
     <div id="mainvisual">
@@ -135,11 +136,14 @@
 
     <section id="contact" class="wrapper">
         <h2 class="sec-title">Contact</h2>
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">送信</button>
-        </form>
+        <div class="contact-input">
+            <form method="post">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button class="button" type="submit">送信</button>
+            </form>
+        </div>
+        
 <!--        <form action="#" method="post">
         <dl>
             <dt><label for="name">NAME</label></dt>

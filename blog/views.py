@@ -12,7 +12,7 @@ def frontpage(request):
         if form.is_valid():
             contact = form.save(commit=False)
             contact.save()
-            return redirect("blog/frontpage.html")
+            return redirect("frontpage")
     else:
         form = ContactForm()
 
