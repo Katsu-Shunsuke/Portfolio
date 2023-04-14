@@ -133,7 +133,7 @@ Main-visual
 
 #main-visual #bar{
     width: 0%;
-    height: 2px;
+    height: 1px;
     background-color: white;
     position: absolute;
     bottom: 20px;
@@ -155,11 +155,11 @@ Main-visual
 
 #main-visual .logo-about {
     flex: 1;
-    font-size: 2rem;
+    font-size: 3rem;
     opacity: 1;
     position: absolute;
     bottom: 35px;
-    left: 25px;
+    left: 15px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -171,7 +171,7 @@ Main-visual
     opacity: 1;
     position: absolute;
     bottom: 0;
-    right: 20px;
+    right: 10px;
     animation: winner-anim 2s ease-out forwards;
 }
 
@@ -361,8 +361,9 @@ Contact
     border: solid 1px #c8c8c8;
     padding: 10px;
 }
-#contact dd textarea {
+#contact p textarea {
     height: 10rem;
+    border:solid 1px black;
 }
 #contact .button {
     text-align: center;

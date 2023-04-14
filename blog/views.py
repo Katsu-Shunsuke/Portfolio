@@ -2,11 +2,21 @@ from http.client import HTTPResponse
 from django.shortcuts import render, redirect
 
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, ContactForm
 
 def frontpage(request):
     posts = Post.objects.all()
-    return render(request, "blog/frontpage.html", {"posts": posts})
+
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            contact = form.save(commit=False)
+            contact.save()
+            return redirect("blog/frontpage.html")
+    else:
+        form = ContactForm()
+
+    return render(request, "blog/frontpage.html", {"posts": posts,  "form": form})
 
 def shoot(request):
     return render(request, "blog/shoot.html")

@@ -135,7 +135,12 @@
 
     <section id="contact" class="wrapper">
         <h2 class="sec-title">Contact</h2>
-        <form action="#" method="post">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">送信</button>
+        </form>
+<!--        <form action="#" method="post">
         <dl>
             <dt><label for="name">NAME</label></dt>
             <dd><input type="text" id="name" name="your-name"></dd>
@@ -146,6 +151,7 @@
         </dl>
         <div class="button"><input type="submit" value="送信"></div>
         </form>
+    -->
     </section>
     </main>
 

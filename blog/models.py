@@ -13,3 +13,9 @@ class Comment(models.Model):
     email = models.EmailField()
     body = models.TextField()
     posted_date = models.DateTimeField(auto_now_add=True)
+
+class Contact(models.Model):
+    name = models.CharField(max_length=255)
+    email = models.EmailField()
+    comment = models.TextField()
+    posted_date = models.DateTimeField(auto_now_add=True)
