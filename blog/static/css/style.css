@@ -180,7 +180,7 @@ Main-visual
         transform: translate(-50%, 30%);
         opacity: 0;
     }
-    80%{
+    75%{
         transform: translate(-50%, 0%);
         opacity: 1;
     }
@@ -270,7 +270,11 @@ Works
 -------------------------------------------*/
 #works{
     padding-top: 150px;
-    background-color: #f1f6f6;
+    background-color: #f1f6f6; 
+    /*background-image: url("images/aboutkatsu.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;*/
 }
 
 #works .sec-title{
