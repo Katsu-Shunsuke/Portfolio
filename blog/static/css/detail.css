@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+    /*scroll-padding-top: 80px; 固定ヘッダの高さ分 */
+}
+body {
+    color: #24292e;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+    display: flex;
+    background-color: #45a5ea;
+    opacity: 75%;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0 0 0 0;
+    padding: 0 5% 0 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+}
+:root {
+    --header-height: 60px; /* ヘッダーの高さを変数に保存 */
+}
+#header .site-title{
+    font-size: 25px;
+    color:white;
+}
+#header .site-list{
+    height: 80px;
+    align-items: center;
+    display: flex;
+}
+#header a:visited{
+    color:white;
+}
+#header ul {
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+#header li {
+    color:white;
+    font-size: 0.9rem;
+    width:75px;
+    height:80px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+#header li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 75px;
+    height: 80px;
+}
+#header li:hover a{
+    color: black;
+}
+#header li:hover {
+    opacity: 0.7;
+    background-color: white;
+}
+#header li img.icon {
+    width: 20px;
+}
+
+/*-------------------------------------------
+explain
+-------------------------------------------*/
+
+#explain {
+    display: flex;
+    justify-content: center;
+    height: 100vh; /* もし画面全体に要素を表示したい場合 */
+    padding-top: 150px;
+}
+
+#explain .detail-wrapper {
+    width: 800px; /* 必要に応じて幅を指定 */
+    text-align: center;
+}
+#explain .detail-title{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+#explain .detail-sub-wrapper{
+    display: flex;
+}
+#explain .detail-image{
+    flex:1;
+    background-color: #24292e;
+    height: 300px;
+    margin: 25px;
+}
+#explain .detail-text{
+    flex:1;
+    padding-top: 25px;
+}
+#explain .background{
+    text-align: left;
+    margin-bottom: 50px;
+}
+#explain .skill-title{
+    text-align: center;
+}
+#explain .detail-skill{
+    text-align:left;
+}
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+    background-color: #24292e;
+    color: #fff;
+    font-size: 0.5rem;
+    padding: 10px 20px;
+    text-align: center;
+}
