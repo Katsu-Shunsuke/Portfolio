@@ -110,7 +110,6 @@ explain
 }
 #explain .detail-image{
     flex:1;
-    background-color: #24292e;
     height: 300px;
     margin: 25px;
 }
@@ -124,9 +123,37 @@ explain
 }
 #explain .skill-title{
     text-align: center;
+    font-size: 20px;
 }
 #explain .detail-skill{
     text-align:left;
+    margin-bottom: 50px;
+}
+
+
+#explain .detail-text img{
+    height: 30px;
+}
+
+.product-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumbnail {
+    height: 75px;
+    width: auto;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.thumbnail.active {
+    border: 2px solid #f90;
+}
+
+.main-image img {
+    width: 100%;
 }
 /*-------------------------------------------
 フッター

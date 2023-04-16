@@ -7,15 +7,33 @@
         <div class="detail-wrapper">
             <div class="detail-title">「Shoot!」</div>
                 <div class="detail-sub-wrapper">
-                    <div class="detail-image"></div>
+                    <div class="detail-image">
+                        <div class="main-image">
+                            <img src="{% static 'images/shoot2.png' %}" alt="Product Image" id="main-img">
+                        </div>
+                        <div class="product-images">
+                            <img src="{% static 'images/shoot2.png' %}" alt="Product Image 1" class="thumbnail active">
+                            <img src="{% static 'images/shoot3.png' %}" alt="Product Image 2" class="thumbnail">
+                            <img src="{% static 'images/shoot4.png' %}" alt="Product Image 3" class="thumbnail">
+                            <img src="{% static 'images/shoot5.png' %}" alt="Product Image 4" class="thumbnail">
+                        </div>
+
+                    </div>
+
                     <div class="detail-text">
                         <div class="background">
                             ゲーム企画からデザイン・設計・実装まで全て1人で作ったものです。
                             Unityを使用した3Dシューティングゲームで、ディズニーのトイストーリーマニアと
                             バズ・ライトイヤーのアストロブラスターを参考にしたものです。
+                            ギミックややり込み要素を散りばめました。
                         </div>
                         <div class="detail-skill">
-                            <div class="skill-title">-使用言語など-</div>
+                            <div class="skill-title">-使用スキル-</div>
+                            Unity, C#, Adobe illustrator
+                        </div>
+                        <div>
+                            <a href="https://github.com/Katsu-Shunsuke/Shoot"><img src="{% static 'images/github-mark.png' %}" alt=""></a>
+                            <a href="https://unityroom.com/games/shoot_s_k"><img src="{% static 'images/unityroom.png' %}" alt=""></a>
                         </div>
                     </div>
                 </div>
