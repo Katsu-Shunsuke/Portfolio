@@ -2,4 +2,45 @@
 
 {% load static %}
 
+<main>
+    <section id="explain">
+        <div class="detail-wrapper">
+            <div class="detail-title">「Feel!」</div>
+                <div class="detail-sub-wrapper">
+                    <div class="detail-image">
+                        <div class="main-image">
+                            <img src="{% static 'images/shoot2.png' %}" alt="Product Image" id="main-img">
+                        </div>
+                        <div class="product-images">
+                            <img src="{% static 'images/shoot2.png' %}" alt="Product Image 1" class="thumbnail active">
+                            <img src="{% static 'images/shoot3.png' %}" alt="Product Image 2" class="thumbnail">
+                            <img src="{% static 'images/shoot4.png' %}" alt="Product Image 3" class="thumbnail">
+                            <img src="{% static 'images/shoot5.png' %}" alt="Product Image 4" class="thumbnail">
+                        </div>
+
+                    </div>
+
+                    <div class="detail-text">
+                        <div class="background">
+                            ユーザが投稿した気分や好みに応じて、メインページのデザインが変更されるホームページ。
+                            
+                        </div>
+                        <div class="detail-skill">
+                            <div class="skill-title">-使用スキル-</div>
+                            Ruby, HTML, CSS, JavaScript 
+                        </div>
+                        <div>
+                            <!-- <a href="https://github.com/Katsu-Shunsuke/Shoot"><img src="{% static 'images/github-mark.png' %}" alt=""></a>
+                            <a href="https://unityroom.com/games/shoot_s_k"><img src="{% static 'images/unityroom.png' %}" alt=""></a> -->
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+</main>
+
+<footer id="footer">
+    <p>&copy; 2023 My Work</p>
+</footer>
+
 {% endblock %}
