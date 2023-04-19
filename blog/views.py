@@ -27,6 +27,9 @@ def paper(request):
 def feel(request):
     return render(request, "blog/feel.html")
 
+def aboutkatsu(request):
+    return render(request, "blog/aboutkatsu.html")
+
 def post_detail(request, slug):
     post = Post.objects.get(slug=slug)
 
